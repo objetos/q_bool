@@ -1,9 +1,10 @@
 ---
-weight: 7
+bookCollapseSection: true
+weight: 6
 draft: false
 ---
 
-# Quadrille boolean operators
+# boolean operators
 
 The [static](https://developer.mozilla.org/en-US/docs/Glossary/Static_method) boolean operators `NEG`, `OR`, `XOR`  `AND` and `DIFF` allows a programmer to create a complex quadrille by combining simpler ones.
 
@@ -60,7 +61,7 @@ function keyPressed() {
 
 ## Quadrille.OR(q1, q2)
 
-Returns a new quadrille `q3` which contains all the filled cells belonging to `q1`, `q2`, or both (`q1` cells take higher precendence).
+Returns a new quadrille `q3` which contains all the filled cells belonging to `q1`, `q2`, or both (`q1` cells take higher precedence).
 
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
@@ -226,7 +227,7 @@ function keyPressed() {
 
 ## Quadrille.AND(q1, q2)
 
-Returns a new quadrille `q3` which contains all the filled cells belonging to `q1` and `q2` (`q1` cells take higher precendence).
+Returns a new quadrille `q3` which contains all the filled cells belonging to `q1` and `q2` (`q1` cells take higher precedence).
 
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
