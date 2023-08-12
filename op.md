@@ -1,6 +1,6 @@
 # `OP()`
 
-Static method that returns the quadrille obtained after applying the given logical operator between the two given quadrilles. This method is useful to implement the other _high-level_ logical operators. For instance the [AND](/p5.quadrille.js/docs/boolean_operators/and/) operator is implemented as follows:
+Static method that returns the quadrille obtained after applying the given logical operator between the two given quadrilles. This method is useful to implement the other _high-level_ logical operators. For instance the [AND]({{< relref "and" >}}) operator is [implemented](https://github.com/objetos/p5.quadrille.js/blob/main/p5.quadrille.js#L41) as follows:
 
 ```js | p5.quadrille.js
 static AND(quadrille1, quadrille2, row, col) {
@@ -25,6 +25,7 @@ static AND(quadrille1, quadrille2, row, col) {
 | quadrille1 | Quadrille: first quadrille                                                                    |
 | quadrille2 | Quadrille: second quadrille                                                                   |
 | row        | Number: `quadrille2` to `quadrille1` vertical displacement[^1]. Negative values are allowed   |
-| col        | Number: `quadrille2` to `quadrille1` horizontal displacement[^1]. Negative values are allowed |
+| col        | Number: `quadrille2` to `quadrille1` horizontal displacement[^2]. Negative values are allowed |
 
-[^1]: Default `quadrille2` displacement respect to `quadrille1` is defined either as `col = col2 - col1` and `row = row2 - row1` if both `quadrille1` and `q2` are drawn, or as `0` otherwise.
+[^1]: Default is `row2 - row1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.
+[^2]: Default is `col2 - col1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.
