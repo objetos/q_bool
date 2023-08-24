@@ -2,7 +2,7 @@
 
 Static method that returns the quadrille obtained after applying the given logical operator between the two given quadrilles. This method is useful to implement the other _high-level_ logical operators. For instance the [AND]({{< relref "and" >}}) operator is [implemented](https://github.com/objetos/p5.quadrille.js/blob/main/p5.quadrille.js#L41) as follows:
 
-```js | p5.quadrille.js
+```js
 static AND(quadrille1, quadrille2, row, col) {
   return this.OP(quadrille1, quadrille2,
     (q1, q2) => {
