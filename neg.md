@@ -69,4 +69,4 @@ function keyPressed() {
 | param     | description                                                                                                    |
 |-----------|----------------------------------------------------------------------------------------------------------------|
 | quadrille | Quadrille: quadrille to be negated                                                                             |
-| pattern   | [p5.Image](https://p5js.org/reference/#/p5.Image) \| [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) \| [p5.Color](https://p5js.org/reference/#/p5.Color) \| array \| object \| string \| number |
+| pattern   | [p5.Image](https://p5js.org/reference/#/p5.Image) \| [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) \| [p5.Color](https://p5js.org/reference/#/p5.Color) \| array \| object \| string \| number \| `null`: empty cells |
