@@ -5,11 +5,7 @@ draft: false
 
 # `NEG()`
 
-<!--
-Static method that returns the quadrille obtained from clearing the `quadrille` filled cells and filling its empty cells with `pattern`.
--->
-
-Returns a new quadrille by clearing `q` filled cells, and filling `q` empty cells with `pattern` (any data type instance but `undefined` or `null`).
+Returns a new quadrille by clearing `q` filled cells, and filling `q` empty cells with `value` (any data type instance but `undefined`).
 
 # Example
 
@@ -62,11 +58,11 @@ function keyPressed() {
 
 # Syntax
 
-> `Quadrille.NEG(quadrille, pattern)`
+> `Quadrille.NEG(quadrille, value)`
 
 # Parameters
 
 | param     | description                                                                                                    |
 |-----------|----------------------------------------------------------------------------------------------------------------|
 | quadrille | Quadrille: quadrille to be negated                                                                             |
-| pattern   | [p5.Image](https://p5js.org/reference/#/p5.Image) \| [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) \| [p5.Color](https://p5js.org/reference/#/p5.Color) \| array \| object \| string \| number \| `null`: empty cells |
+| value     | [p5.Image](https://p5js.org/reference/#/p5.Image) \| [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) \| [p5.Color](https://p5js.org/reference/#/p5.Color) \| array \| object \| string \| number \| `null`: empty cells |
