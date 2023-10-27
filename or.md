@@ -3,7 +3,7 @@ weight: 3
 draft: false
 ---
 
-# `OR()`
+# `or()`
 
 Returns a new quadrille which contains all the filled cells belonging to `quadrille1`, `quadrille2`, or both (`quadrille1` cells take higher precedence).
 
@@ -11,7 +11,7 @@ Returns a new quadrille which contains all the filled cells belonging to `quadri
 
 (to move `quadrille2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
-{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="355" height="505" >}}
+{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="355" height="505" >}}
 `use strict`;
 const COLS = 11, ROWS = 16;
 // quadrille0 is defined as reference quadrille
@@ -32,7 +32,7 @@ function draw() {
   drawQuadrille(quadrille0, { outlineWeight: 0.5 });
   drawQuadrille(quadrille1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(quadrille2, { col: col2, row: row2, outline: 'magenta' });
-  const quadrille3 = Quadrille.OR(quadrille1, quadrille2);
+  const quadrille3 = Quadrille.or(quadrille1, quadrille2);
   drawQuadrille(quadrille3, { col: col3, row: row3, outline: 'green' });
   text('(row2: ' + row2 + ', col2: ' + col2 + ')', 10, 25);
 }
@@ -70,7 +70,7 @@ function draw() {
   drawQuadrille(quadrille0, { outlineWeight: 0.5 });
   drawQuadrille(quadrille1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(quadrille2, { col: col2, row: row2, outline: 'magenta' });
-  const quadrille3 = Quadrille.OR(quadrille1, quadrille2);
+  const quadrille3 = Quadrille.or(quadrille1, quadrille2);
   drawQuadrille(quadrille3, { col: col3, row: row3, outline: 'green' });
   text('(row2: ' + row2 + ', col2: ' + col2 + ')', 10, 25);
 }
@@ -90,7 +90,7 @@ function keyPressed() {
 
 # Syntax
 
-> `Quadrille.OR(quadrille1, quadrille2, [row], [col])`
+> `Quadrille.or(quadrille1, quadrille2, [row], [col])`
 
 # Parameters
 

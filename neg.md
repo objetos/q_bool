@@ -3,7 +3,7 @@ weight: 2
 draft: false
 ---
 
-# `NEG()`
+# `neg()`
 
 Returns a new quadrille by clearing `q` filled cells, and filling `q` empty cells with `value` (any data type instance but `undefined`).
 
@@ -11,7 +11,7 @@ Returns a new quadrille by clearing `q` filled cells, and filling `q` empty cell
 
 (click on the canvas and press any key)
 
-{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="325" height="265" >}}
+{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="325" height="265" >}}
 `use strict`;
 Quadrille.CELL_LENGTH = 60;
 let q;
@@ -29,7 +29,7 @@ function draw() {
 
 function mouseClicked() {
   west = !west;
-  q = Quadrille.NEG(q, west ? '🌎' : '🌏');
+  q = Quadrille.neg(q, west ? '🌎' : '🌏');
 }
 {{< /p5-global-iframe >}}
 
@@ -51,14 +51,14 @@ function draw() {
 
 function keyPressed() {
   west = !west;
-  q = Quadrille.NEG(q, west ? '🌎' : '🌏');
+  q = Quadrille.neg(q, west ? '🌎' : '🌏');
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.NEG(quadrille, value)`
+> `Quadrille.neg(quadrille, value)`
 
 # Parameters
 
