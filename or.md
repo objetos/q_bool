@@ -21,8 +21,8 @@ let col2 = 6, row2 = 3;
 const col3 = 2, row3 = 10;
 
 function setup() {
-  Quadrille.CELL_LENGTH = 30;
-  createCanvas(COLS * Quadrille.CELL_LENGTH, ROWS * Quadrille.CELL_LENGTH);
+  Quadrille.cellLength = 30;
+  createCanvas(COLS * Quadrille.cellLength, ROWS * Quadrille.cellLength);
   quadrille0 = createQuadrille(COLS, ROWS, COLS * ROWS, color('darkkhaki'));
   quadrille1 = createQuadrille(2, 3, 4, '👻');
   quadrille2 = createQuadrille(3, 2, 4, '✈️');
@@ -59,8 +59,8 @@ let col2 = 6, row2 = 3;
 const col3 = 2, row3 = 10;
 
 function setup() {
-  Quadrille.CELL_LENGTH = 30;
-  createCanvas(COLS * Quadrille.CELL_LENGTH, ROWS * Quadrille.CELL_LENGTH);
+  Quadrille.cellLength = 30;
+  createCanvas(COLS * Quadrille.cellLength, ROWS * Quadrille.cellLength);
   quadrille0 = createQuadrille(COLS, ROWS, COLS * ROWS, color('darkkhaki'));
   quadrille1 = createQuadrille(2, 3, 4, '👻');
   quadrille2 = createQuadrille(3, 2, 4, '✈️');

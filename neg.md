@@ -13,7 +13,7 @@ Returns a new quadrille by clearing `q` filled cells, and filling `q` empty cell
 
 {{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="325" height="265" >}}
 `use strict`;
-Quadrille.CELL_LENGTH = 60;
+Quadrille.cellLength = 60;
 let q;
 let west;
 
@@ -35,7 +35,7 @@ function mouseClicked() {
 
 {{< details title="code" open=false >}}
 ```js
-Quadrille.CELL_LENGTH = 60;
+Quadrille.cellLength = 60;
 let q;
 let west;
 
