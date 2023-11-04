@@ -94,12 +94,12 @@ function keyPressed() {
 
 # Parameters
 
-| param      | description                                                                                   |
-|------------|-----------------------------------------------------------------------------------------------|
-| quadrille1 | Quadrille: first quadrille                                                                    |
-| quadrille2 | Quadrille: second quadrille                                                                   |
-| row        | Number: `quadrille2` to `quadrille1` vertical displacement[^1]. Negative values are allowed   |
-| col        | Number: `quadrille2` to `quadrille1` horizontal displacement[^2]. Negative values are allowed |
+| param      | description                                                                                                   |
+|------------|---------------------------------------------------------------------------------------------------------------|
+| quadrille1 | Quadrille: first quadrille to merge                                                                           |
+| quadrille2 | Quadrille: second quadrille to merge                                                                          |
+| row        | Number: The vertical displacement of `quadrille2` relative to `quadrille1`[^1]. Negative values are allowed   |
+| col        | Number: The horizontal displacement of `quadrille2` relative to `quadrille1`[^2]. Negative values are allowed |
 
 [^1]: Default is `row2 - row1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.
 [^2]: Default is `col2 - col1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.

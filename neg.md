@@ -62,7 +62,12 @@ function keyPressed() {
 
 # Parameters
 
-| param     | description                                                                                                    |
-|-----------|----------------------------------------------------------------------------------------------------------------|
-| quadrille | Quadrille: quadrille to be negated                                                                             |
-| value     | [p5.Image](https://p5js.org/reference/#/p5.Image) \| [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) \| [p5.Color](https://p5js.org/reference/#/p5.Color) \| array \| object \| string \| number \| `null`: empty cells |
+| param      | description                                                                                                   |
+|------------|---------------------------------------------------------------------------------------------------------------|
+| quadrille1 | Quadrille: first quadrille to merge                                                                           |
+| quadrille2 | Quadrille: second quadrille to merge                                                                          |
+| row        | Number: The vertical displacement of `quadrille2` relative to `quadrille1`[^1]. Negative values are allowed   |
+| col        | Number: The horizontal displacement of `quadrille2` relative to `quadrille1`[^2]. Negative values are allowed |
+
+[^1]: Default is `row2 - row1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.
+[^2]: Default is `col2 - col1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.
