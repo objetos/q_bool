@@ -11,7 +11,7 @@ Returns a new quadrille which contains all the filled cells belonging to `quadri
 
 (to move `quadrille2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
-{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="355" height="505" >}}
+{{< p5-global-iframe quadrille="true" width="355" height="505" >}}
 `use strict`;
 const COLS = 11, ROWS = 16;
 // quadrille0 is defined as reference quadrille
