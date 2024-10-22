@@ -1,9 +1,8 @@
 ---
 weight: 3
 draft: false
+title: or()
 ---
-
-# `or()`
 
 Returns a new quadrille which contains all the filled cells belonging to `quadrille1`, `quadrille2`, or both (`quadrille1` cells take higher precedence).
 

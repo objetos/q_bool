@@ -1,4 +1,8 @@
-# `merge()`
+---
+weight: 1
+draft: false
+title: merge()
+---
 
 Static method that computes a new quadrille by applying a specified logical `operator` to each corresponding cell of two given quadrilles. It serves as a basis for implementing higher-level logical operations. For instance, the [and]({{< relref "and" >}}) operator is implemented using `merge` as:
 

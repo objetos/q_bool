@@ -1,9 +1,8 @@
 ---
 weight: 5
 draft: false
+title: and()
 ---
-
-# `and()`
 
 Returns a new quadrille which contains all the filled cells belonging to `quadrille1` and `quadrille2` (`quadrille1` cells take higher precedence).
 

@@ -1,9 +1,8 @@
 ---
 weight: 6
 draft: false
+title: diff()
 ---
-
-# `diff()`
 
 Returns a new quadrille which contains all the filled cells belonging to `quadrille1` but not to `quadrille2`.
 

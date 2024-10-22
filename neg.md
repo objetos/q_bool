@@ -1,9 +1,8 @@
 ---
 weight: 2
 draft: false
+title: neg()
 ---
-
-# `neg()`
 
 Returns a new quadrille by clearing `q` filled cells, and filling `q` empty cells with `value` (any data type instance but `undefined`).
 

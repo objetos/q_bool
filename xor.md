@@ -1,9 +1,8 @@
 ---
 weight: 4   
-draft: false
+draft: falset
+title: xor()
 ---
-
-# `xor()`
 
 Returns a new quadrille which contains all the filled cells belonging to `quadrille1` or `quadrille2`, but not both.
 
