@@ -31,8 +31,8 @@ function draw() {
   drawQuadrille(q0, { outlineWeight: 0.5 });
   drawQuadrille(q1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(q2, { col: col2, row: row2, outline: 'magenta' });
-  const quadrille3 = Quadrille.xor(q1, q2);
-  drawQuadrille(quadrille3, { col: col3, row: row3, outline: 'green' });
+  const q3 = Quadrille.xor(q1, q2);
+  drawQuadrille(q3, { col: col3, row: row3, outline: 'green' });
   text('(row2: ' + row2 + ', col2: ' + col2 + ')', 10, 25);
 }
 
@@ -69,8 +69,8 @@ function draw() {
   drawQuadrille(q0, { outlineWeight: 0.5 });
   drawQuadrille(q1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(q2, { col: col2, row: row2, outline: 'magenta' });
-  const quadrille3 = Quadrille.xor(q1, q2);
-  drawQuadrille(quadrille3, { col: col3, row: row3, outline: 'green' });
+  const q3 = Quadrille.xor(q1, q2);
+  drawQuadrille(q3, { col: col3, row: row3, outline: 'green' });
   text('(row2: ' + row2 + ', col2: ' + col2 + ')', 10, 25);
 }
 
