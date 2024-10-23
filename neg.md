@@ -1,10 +1,10 @@
 ---
 weight: 2
 draft: false
-title: neg()
+title: neg(q, value)
 ---
 
-Returns a new quadrille by clearing `q` filled cells, and filling `q` empty cells with `value` (any data type instance but `undefined`).
+Returns a new quadrille by clearing `q` quadrille filled cells, and filling its empty cells with `value` (any data type instance but `undefined`).
 
 # Example
 
@@ -61,12 +61,7 @@ function keyPressed() {
 
 # Parameters
 
-| param      | description                                                                                                   |
-|------------|---------------------------------------------------------------------------------------------------------------|
-| quadrille1 | Quadrille: first quadrille to merge                                                                           |
-| quadrille2 | Quadrille: second quadrille to merge                                                                          |
-| row        | Number: The vertical displacement of `quadrille2` relative to `quadrille1`[^1]. Negative values are allowed   |
-| col        | Number: The horizontal displacement of `quadrille2` relative to `quadrille1`[^2]. Negative values are allowed |
-
-[^1]: Default is `row2 - row1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.
-[^2]: Default is `col2 - col1` if both `quadrille1` and `quadrille2` are drawn, or `0` otherwise.
+| param | description                                                                  |
+|-------|------------------------------------------------------------------------------|
+| q     | Quadrille: the quadrille to negate (clear filled cells and fill empty cells) |
+| value | Any: the value used to fill empty cells (cannot be `undefined`)              |
