@@ -6,7 +6,7 @@ title: diff(q1, q2, row, col)
 
 Returns a new quadrille with all the filled cells from the `q1` quadrille but not from the `q2` quadrille.
 
-# Example
+## Example
 
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
@@ -87,11 +87,11 @@ function keyPressed() {
 ```
 {{< /details >}}
 
-# Syntax
+## Syntax
 
 > `Quadrille.diff(q1, q2, [row], [col])`
 
-# Parameters
+## Parameters
 
 | param | description                                                                                   |
 |-------|-----------------------------------------------------------------------------------------------|

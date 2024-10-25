@@ -6,7 +6,7 @@ title: and(q1, q2, row, col)
 
 Returns a new quadrille containing all the filled cells from both `q1` and `q2` quadrilles, with `q1` cells taking precedence.
 
-# Example
+## Example
 
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
@@ -87,11 +87,11 @@ function keyPressed() {
 ```
 {{< /details >}}
 
-# Syntax
+## Syntax
 
 > `Quadrille.and(q1, q2, [row], [col])`
 
-# Parameters
+## Parameters
 
 | param | description                                                                                   |
 |-------|-----------------------------------------------------------------------------------------------|

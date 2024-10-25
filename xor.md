@@ -6,7 +6,7 @@ title: xor(q1, q2, row, col)
 
 Returns a new quadrille containing all the filled cells from either the `q1` or `q2` quadrille, but not from both.
 
-# Example
+## Example
 
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
@@ -87,11 +87,11 @@ function keyPressed() {
 ```
 {{< /details >}}
 
-# Syntax
+## Syntax
 
 > `Quadrille.xor(q1, q2, [row], [col])`
 
-# Parameters
+## Parameters
 
 | param | description                                                                                   |
 |-------|-----------------------------------------------------------------------------------------------|

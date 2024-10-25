@@ -6,7 +6,7 @@ title: neg(q, value)
 
 Returns a new quadrille by clearing `q` quadrille filled cells, and filling its empty cells with `value` (any data type instance but `undefined`).
 
-# Example
+## Example
 
 (click on the canvas and press any key)
 
@@ -55,11 +55,11 @@ function keyPressed() {
 ```
 {{< /details >}}
 
-# Syntax
+## Syntax
 
 > `Quadrille.neg(quadrille, value)`
 
-# Parameters
+## Parameters
 
 | param | description                                                                  |
 |-------|------------------------------------------------------------------------------|
