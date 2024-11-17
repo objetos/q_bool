@@ -11,7 +11,7 @@ Returns a new quadrille with all the filled cells from the `q1` quadrille but no
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
 {{< p5-global-iframe quadrille="true" width="355" height="505" >}}
-`use strict`;
+'use strict';
 const COLS = 11, ROWS = 16;
 // q0 is defined as reference quadrille
 let q0, q1, q2;

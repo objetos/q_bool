@@ -11,7 +11,7 @@ Returns a new quadrille by clearing `q` quadrille filled cells, and filling its 
 (click on the canvas and press any key)
 
 {{< p5-global-iframe quadrille="true" width="325" height="265" >}}
-`use strict`;
+'use strict';
 Quadrille.cellLength = 60;
 let q;
 let west;
