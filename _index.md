@@ -7,6 +7,8 @@ title: Algebra
 
 The **quadrille algebra** provides a suite of [static methods](https://developer.mozilla.org/en-US/docs/Glossary/Static_method) for applying logical operations to `quadrille` instances. Inspired by [constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry) and [boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), these methods combine and manipulate quadrilles, leading to **new quadrilles** as an aggregation of others.  
 
+TODO add sketch showing superimposition concept.
+
 ## Method Overview  
 
 - **[neg]({{< relref "neg" >}}):** Performs a logical **NOT** operation, inverting empty and non-empty cells, filling empty cells with a provided value.  
