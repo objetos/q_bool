@@ -25,7 +25,7 @@ This example implements the `null` operator (`() => null`), which produces a new
 
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
-{{< p5-global-iframe quadrille="true" width="475" height="325" >}}
+{{< p5-global-iframe quadrille="true" width="475" height="345" >}}
 'use strict';
 
 const COLS = 15, ROWS = 10;
@@ -33,6 +33,7 @@ const COLS = 15, ROWS = 10;
 let q0, q1, q2;
 const col1 = 3, row1 = 4;
 let col2 = 9, row2 = 3;
+let transparency; // Slider for transparency
 Quadrille.outlineWeight = 3;
 Quadrille.cellLength = 30;
 
@@ -41,20 +42,25 @@ function setup() {
   q0 = createQuadrille(COLS, ROWS, COLS * ROWS, color('darkkhaki'));
   q1 = createQuadrille(2, 3, 4, '👻');
   q2 = createQuadrille(3, 2, 4, '✈️');
+
+  // Create a slider for transparency
+  transparency = createSlider(0, 255, 35).position(10, height + 10);
 }
 
 function draw() {
+  background(255); // Clear background
   drawQuadrille(q0, { outlineWeight: 0.5 });
   drawQuadrille(q1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(q2, { col: col2, row: row2, outline: 'magenta' });
   const q3 = Quadrille.merge(q1, q2, () => null);
-  q3.fill(color(255, 0, 255, 35)); // Fill q3 with semi-transparent magenta
+  // Fill q3 with magenta and dynamic transparency
+  q3.fill(color(255, 0, 255, transparency.value()));
   drawQuadrille(q3, { col: min(col1, col2), row: min(row1, row2),
                       outline: 'green', outlineWeight: 1 });
-  text('(row2: ' + row2 + ', col2: ' + col2 + ')', 10, 25);
 }
 
 function mouseDragged() {
+  if (mouseY > 300) return;
   row2 = q0.mouseRow;
   col2 = q0.mouseCol;
   return false; // Prevent scrolling
@@ -73,6 +79,7 @@ const COLS = 15, ROWS = 10;
 let q0, q1, q2;
 const col1 = 3, row1 = 4;
 let col2 = 9, row2 = 3;
+let transparency; // Slider for transparency
 Quadrille.outlineWeight = 3;
 Quadrille.cellLength = 30;
 
@@ -81,20 +88,25 @@ function setup() {
   q0 = createQuadrille(COLS, ROWS, COLS * ROWS, color('darkkhaki'));
   q1 = createQuadrille(2, 3, 4, '👻');
   q2 = createQuadrille(3, 2, 4, '✈️');
+
+  // Create a slider for transparency
+  transparency = createSlider(0, 255, 35).position(10, height + 10);
 }
 
 function draw() {
+  background(255); // Clear background
   drawQuadrille(q0, { outlineWeight: 0.5 });
   drawQuadrille(q1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(q2, { col: col2, row: row2, outline: 'magenta' });
   const q3 = Quadrille.merge(q1, q2, () => null);
-  q3.fill(color(255, 0, 255, 35)); // Fill q3 with semi-transparent magenta
+  // Fill q3 with magenta and dynamic transparency
+  q3.fill(color(255, 0, 255, transparency.value()));
   drawQuadrille(q3, { col: min(col1, col2), row: min(row1, row2),
                       outline: 'green', outlineWeight: 1 });
-  text('(row2: ' + row2 + ', col2: ' + col2 + ')', 10, 25);
 }
 
 function mouseDragged() {
+  if (mouseY > 300) return;
   row2 = q0.mouseRow;
   col2 = q0.mouseCol;
   return false; // Prevent scrolling
