@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 2
 draft: false
 title: or(q1, q2, row, col)
 ---

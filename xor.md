@@ -1,5 +1,5 @@
 ---
-weight: 4   
+weight: 3
 draft: false
 title: xor(q1, q2, row, col)
 ---

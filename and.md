@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 4
 draft: false
 title: and(q1, q2, row, col)
 ---

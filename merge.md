@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 6
 draft: false
 title: merge(q1, q2, operator, row, col)
 ---
