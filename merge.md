@@ -21,7 +21,7 @@ In this example, the `and` function checks each cell of `q1` and `q2`. If both c
 
 ## Example 1: `null` operator
 
-This example implements the `null` operator, which produces a new quadrille with all empty cells. It demonstrates that the dimensions of the resulting quadrille span the minimum area required to cover both `q1` and `q2`.
+This example implements the `null` operator (`() => null`), which produces a new quadrille with all empty cells. It demonstrates that the dimensions of the resulting quadrille span the minimum area required to cover both `q1` and `q2`.
 
 (to move `q2` drag mouse or press **a**, **s**, **w**, **z** keys)
 
