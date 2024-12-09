@@ -87,6 +87,10 @@ function keyPressed() {
 ```
 {{< /details >}}
 
+{{< callout type="info" >}}
+Observe that the dimensions of the resulting `q3` quadrille **span the minimum area** required to cover both `q1` and `q2`. See [merge]({{< relref "merge" >}}).
+{{< /callout >}}
+
 ## Syntax
 
 > `Quadrille.or(q1, q2, [row], [col])`
