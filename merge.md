@@ -8,12 +8,12 @@ Static method that computes a new quadrille by applying a specified logical `ope
 
 ## Example 1: `and` operator
 
-The `merge` method can be used to create higher-level logical operations. For instance, the [and(q1, q2, row, col)]({{< ref "and" >}}) operation between two quadrilles can be implemented using `merge` to return a cell value only when both corresponding cells in `q1` and `q2` are non-empty.
+The `merge` method can be used to create higher-level logical operations. For instance, the [and]({{< ref "and" >}}) operation between two quadrilles can be implemented using `merge` to return a cell value only when both corresponding cells in `q1` and `q2` are non-empty.
 
 ```js
 static and(q1, q2, row, col) {
   return this.merge(q1, q2,
-    (cell1, cell2) => cell1 && cell2 ? cell1 : null, row, col);
+                    (cell1, cell2) => cell1 && cell2 ? cell1 : null, row, col);
 }
 ```
 
@@ -33,7 +33,7 @@ const COLS = 15, ROWS = 10;
 let q0, q1, q2;
 const col1 = 3, row1 = 4;
 let col2 = 9, row2 = 3;
-let transparency; // Slider for transparency
+let opacity; // Slider for opacity
 Quadrille.outlineWeight = 3;
 Quadrille.cellLength = 30;
 
@@ -42,9 +42,8 @@ function setup() {
   q0 = createQuadrille(COLS, ROWS, COLS * ROWS, color('darkkhaki'));
   q1 = createQuadrille(2, 3, 4, '👻');
   q2 = createQuadrille(3, 2, 4, '✈️');
-
-  // Create a slider for transparency
-  transparency = createSlider(0, 255, 35).position(10, height + 10);
+  // Create a slider for opacity
+  opacity = createSlider(0, 255, 35).position(10, height + 10);
 }
 
 function draw() {
@@ -52,9 +51,10 @@ function draw() {
   drawQuadrille(q0, { outlineWeight: 0.5 });
   drawQuadrille(q1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(q2, { col: col2, row: row2, outline: 'magenta' });
+  // The null operator is used to generate q3
   const q3 = Quadrille.merge(q1, q2, () => null);
-  // Fill q3 with magenta and dynamic transparency
-  q3.fill(color(255, 0, 255, transparency.value()));
+  // Fill q3 with magenta and dynamic opacity
+  q3.fill(color(255, 0, 255, opacity.value()));
   drawQuadrille(q3, { col: min(col1, col2), row: min(row1, row2),
                       outline: 'green', outlineWeight: 1 });
 }
@@ -79,7 +79,7 @@ const COLS = 15, ROWS = 10;
 let q0, q1, q2;
 const col1 = 3, row1 = 4;
 let col2 = 9, row2 = 3;
-let transparency; // Slider for transparency
+let opacity; // Slider for opacity
 Quadrille.outlineWeight = 3;
 Quadrille.cellLength = 30;
 
@@ -88,9 +88,8 @@ function setup() {
   q0 = createQuadrille(COLS, ROWS, COLS * ROWS, color('darkkhaki'));
   q1 = createQuadrille(2, 3, 4, '👻');
   q2 = createQuadrille(3, 2, 4, '✈️');
-
-  // Create a slider for transparency
-  transparency = createSlider(0, 255, 35).position(10, height + 10);
+  // Create a slider for opacity
+  opacity = createSlider(0, 255, 35).position(10, height + 10);
 }
 
 function draw() {
@@ -98,9 +97,10 @@ function draw() {
   drawQuadrille(q0, { outlineWeight: 0.5 });
   drawQuadrille(q1, { col: col1, row: row1, outline: 'yellow' });
   drawQuadrille(q2, { col: col2, row: row2, outline: 'magenta' });
+  // The null operator is used to generate q3
   const q3 = Quadrille.merge(q1, q2, () => null);
-  // Fill q3 with magenta and dynamic transparency
-  q3.fill(color(255, 0, 255, transparency.value()));
+  // Fill q3 with magenta and dynamic opacity
+  q3.fill(color(255, 0, 255, opacity.value()));
   drawQuadrille(q3, { col: min(col1, col2), row: min(row1, row2),
                       outline: 'green', outlineWeight: 1 });
 }
