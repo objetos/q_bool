@@ -19,7 +19,7 @@ static and(q1, q2, row, col) {
 
 In this example, the `and` function checks each cell of `q1` and `q2`. If both cells are non-empty (i.e., non `null`), the result will contain the cell value from `q1`. If either cell is empty (i.e., `null`), the merged cell will also be empty.
 
-## Example 1: `null` operator
+## Example 2: `null` operator
 
 This example implements the `null` operator (`() => null`), which produces a new quadrille with all empty cells. It demonstrates that the dimensions of the resulting quadrille span the minimum area required to cover both `q1` and `q2`.
 
