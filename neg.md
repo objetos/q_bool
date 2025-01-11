@@ -61,7 +61,7 @@ function keyPressed() {
 
 ## Parameters
 
-| param | description                                                                  |
-|-------|------------------------------------------------------------------------------|
-| q     | Quadrille: the quadrille to negate (clear filled cells and fill empty cells) |
-| value | Any: the value used to fill empty cells (cannot be `undefined`)              |
+| Param   | Description                                                                  |
+|---------|------------------------------------------------------------------------------|
+| `q`     | Quadrille: the quadrille to negate (clear filled cells and fill empty cells) |
+| `value` | Any: the value used to fill empty cells                                      |

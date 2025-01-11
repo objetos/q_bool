@@ -125,13 +125,13 @@ function keyPressed() {
 
 ## Parameters
 
-| param    | description                                                                                   |
-|----------|-----------------------------------------------------------------------------------------------|
-| q1       | Quadrille: The first quadrille to merge                                                       |
-| q2       | Quadrille: The second quadrille to merge                                                      |
-| operator | Function: A function defining the logical operation for merging                               |
-| row      | Number: The vertical displacement of `q2` relative to `q1`. Negative values are allowed[^1].  |
-| col      | Number: The horizontal displacement of `q2` relative to `q1`. Negative values are allowed[^2].|
+| Param      | Description                                                                                   |
+|------------|-----------------------------------------------------------------------------------------------|
+| `q1`       | Quadrille: The first quadrille to merge                                                       |
+| `q2`       | Quadrille: The second quadrille to merge                                                      |
+| `operator` | Function: A function defining the logical operation for merging                               |
+| `row`      | Number: The vertical displacement of `q2` relative to `q1`. Negative values are allowed[^1].  |
+| `col`      | Number: The horizontal displacement of `q2` relative to `q1`. Negative values are allowed[^2].|
 
 [^1]: Default is `row2 - row1` if both `q1` and `q2` are drawn, or `0` otherwise.
 [^2]: Default is `col2 - col1` if both `q1` and `q2` are drawn, or `0` otherwise.

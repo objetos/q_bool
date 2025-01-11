@@ -97,12 +97,12 @@ Observe that the dimensions of the resulting `q3` quadrille **span the minimum a
 
 ## Parameters
 
-| param | description                                                                                   |
+| Param | Description                                                                                   |
 |-------|-----------------------------------------------------------------------------------------------|
-| q1    | Quadrille: first quadrille to merge                                                           |
-| q2    | Quadrille: second quadrille to merge                                                          |
-| row   | Number: The vertical displacement of `q2` relative to `q1`[^1]. Negative values are allowed   |
-| col   | Number: The horizontal displacement of `q2` relative to `q1`[^2]. Negative values are allowed |
+| `q1`  | Quadrille: first quadrille to merge                                                           |
+| `q2`  | Quadrille: second quadrille to merge                                                          |
+| `row` | Number: The vertical displacement of `q2` relative to `q1`[^1]. Negative values are allowed   |
+| `col` | Number: The horizontal displacement of `q2` relative to `q1`[^2]. Negative values are allowed |
 
 [^1]: Default is `row2 - row1` if both `q1` and `q2` are drawn, or `0` otherwise.
 [^2]: Default is `col2 - col1` if both `q1` and `q2` are drawn, or `0` otherwise.
