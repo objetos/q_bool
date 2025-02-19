@@ -32,7 +32,7 @@ function mouseClicked() {
 }
 {{< /p5-global-iframe >}}
 
-{{< details title="code" open=false >}}
+{{% details title="code" open=true %}}
 ```js
 Quadrille.cellLength = 60;
 let q;
@@ -53,7 +53,7 @@ function keyPressed() {
   q = Quadrille.neg(q, west ? '🌎' : '🌏');
 }
 ```
-{{< /details >}}
+{{% /details %}}
 
 ## Syntax
 

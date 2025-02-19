@@ -72,7 +72,7 @@ function keyPressed() {
 }
 {{< /p5-global-iframe >}}
 
-{{< details title="code" open=false >}}
+{{% details title="code" open=true %}}
 ```js
 const COLS = 15, ROWS = 10;
 // q0 is defined as reference quadrille
@@ -117,7 +117,7 @@ function keyPressed() {
   col2 = key === 'a' ? col2 - 1 : key === 's' ? col2 + 1 : col2;
 }
 ```
-{{< /details >}}
+{{% /details %}}
 
 ## Syntax
 
