@@ -9,7 +9,7 @@ The **quadrille algebra** provides a suite of [static methods](https://developer
 
 ## Method Overview  
 
-- **[neg(q, value)]({{< relref "neg" >}}):** Performs a logical **NOT** operation, inverting empty and non-empty cells, filling empty cells with a provided `value`.  
+- **[not(q, value)]({{< relref "not" >}}):** Performs a logical **NOT** operation, inverting empty and non-empty cells, filling empty cells with a provided `value`.  
 - **[or(q1, q2, row, col)]({{< relref "or" >}}):** Combines two quadrilles using a logical **OR**, merging their non-empty cells into a new quadrille.  
 - **[xor(q1, q2, row, col)]({{< relref "xor" >}}):** Returns a new quadrille containing all the non-empty cells that appear in either `q1` or `q2` but not in both.  
 - **[and(q1, q2, row, col)]({{< relref "and" >}}):** Returns a new quadrille containing only the cells that are non-empty in both `q1` and `q2`.  
