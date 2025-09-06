@@ -6,6 +6,10 @@ title: not(q, value)
 
 Returns a new quadrille by clearing `q` quadrille filled cells, and filling its empty cells with `value` (any data type instance but `undefined`).
 
+{{< callout type="info" >}}
+For a **destructive instance version**, call `q.not(value)`.
+{{< /callout >}}
+
 ## Example
 
 (click on the canvas and press any key)
