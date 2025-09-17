@@ -17,3 +17,10 @@ The **quadrille algebra** provides a suite of [static methods](https://developer
 - **[merge(q1, q2, operator, row, col)]({{< relref "merge" >}}):** Returns a new quadrille by applying a specified logical `operator` to each corresponding cell of `q1` and `q2`.
 
 These algebraic methods offer powerful tools for composing quadrilles, enabling the construction of intricate patterns, designs, or logical transformations. Whether you're combining shapes, masking cells, or creating dynamic compositions, the quadrille algebra brings structure and precision to your work.
+
+{{< callout type="info" >}}
+All algebra methods also have **destructive, chainable instance** forms: they mutate `q` and return it.
+
+**Single-step:** `q.not('#000')`, `q.and(q2)`, `q.diff(mask)`  
+**Chained:** `q.not('#000').or(q2).and(q3)`, `q.or(stamp, 2, -1).diff(mask)`, `q.merge(mask, op, 1, 0).xor(qHole).not('#fff')`
+{{< /callout >}}
